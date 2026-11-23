@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pengolah Nilai Mahasiswa</title>
+</head>
+<body>
+  <h1>Pengolah Nilai Mahasiswa</h1>
+  <p>Buka Console (F12) untuk melihat hasilnya.</p>
+
+  <script>
+    const namaMahasiswa = "Sebastian Abdilah";
+    const nilaiTugas = 80;
+    const nilaiUTS = 70;
+    const nilaiUAS = 90;
+
+    const nilaiAkhir = (nilaiTugas * 0.3) + (nilaiUTS * 0.3) + (nilaiUAS * 0.4);
+
+    let status;
+    if (nilaiAkhir >= 60) {
+      status = "LULUS";
+    } else {
+      status = "TIDAK LULUS";
+    }
+
+    console.log("Nama Mahasiswa : " + namaMahasiswa);
+    console.log("Nilai Akhir    : " + nilaiAkhir);
+    console.log("Status         : " + status);
+  </script>
+</body>
+</html>
